@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/andresg9108/testHeroku#readme",
   "dependencies": {
-    "dotenv": "^16.0.2",
     "express": "^4.18.1"
   }
 }

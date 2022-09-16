@@ -1,5 +1,4 @@
-const dotenv = require('dotenv');
-dotenv.config();
+const PORT = process.env.PORT || 5000;
 
 const path = require('path');
 const express = require('express');
@@ -9,6 +8,6 @@ const server = http.createServer(app);
 
 app.use(express.static(path.join(__dirname, '/public')));
 
-server.listen(process.env.MY_PORT, function(){
-	console.log(path.join('Port: ', process.env.MY_PORT));
+server.listen(PORT, function(){
+	console.log(path.join('Port: ', String(PORT)));
 });
